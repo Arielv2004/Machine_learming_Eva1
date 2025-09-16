@@ -1,0 +1,15 @@
+# Here you can define all your datasets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+# Datasets crudos
+# Datasets crudos
+# Catalogo de datasets para el proyecto de películas
+
+movies_full:
+  type: pandas.csv_dataset
+  filepath: data/movies_metadata.csv
+
+ratings_processed:
+  type: pandas.csv_dataset
+  filepath: data/ratings.csv
