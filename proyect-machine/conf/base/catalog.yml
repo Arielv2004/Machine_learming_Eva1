@@ -6,10 +6,16 @@
 # Datasets crudos
 # Catalogo de datasets para el proyecto de películas
 
-movies_full:
-  type: pandas.csv_dataset
-  filepath: data/movies_metadata.csv
+movies_metadata:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/movies_metadata.csv
+  load_args:
+    low_memory: False
 
-ratings_processed:
-  type: pandas.csv_dataset
-  filepath: data/ratings.csv
+credits:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/credits.csv
+
+ratings:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/ratings.csv
