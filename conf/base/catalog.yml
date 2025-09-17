@@ -1,0 +1,32 @@
+# conf/base/catalog.yml
+movies_metadata:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/movies_metadata.csv
+
+credits:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/credits.csv
+
+ratings:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/ratings.csv
+
+movies_selected:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/movies_selected.csv
+
+movies_clean:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/movies_clean.csv
+
+movies_with_genre:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/movies_with_genre.csv
+
+movies_with_credits:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/movies_with_credits.csv
+
+movies_final:
+  type: pandas.CSVDataSet
+  filepath: data/04_feature/movies_final.csv

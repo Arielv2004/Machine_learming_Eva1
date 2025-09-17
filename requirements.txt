@@ -1,0 +1,9 @@
+
+kedro-viz
+kedro-datasets
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupyter
